@@ -1,6 +1,6 @@
 file:///D:/MIT-149/jshroomart/newclasses.html/*
 Author: Joy Dixon
-Date:  6/30/2022
+Modified Date:  8/8/2022
 File Name: Styles.css
 */
 
@@ -153,7 +153,7 @@ main {
 	text-decoration: none;
 }
 
-#form {	
+/* #form {	
 	margin-top: 2%;  
 	padding: 2%;
 }
@@ -163,7 +163,8 @@ main {
 	color: #00b050;
 }
 
-/* Style rules for form elements  */
+Style rules for form elements  */
+
 fieldset {
 	margin-bottom: 2%;
 	font-family: 'Outfit', sans-serif;
@@ -195,7 +196,7 @@ select {
 	font-family: 'Outfit', sans-serif;
 }
 
-form #submit {
+/* form #submit {
 	margin: 0 auto;
 	border: none;
 	display: block;
@@ -343,7 +344,7 @@ footer a {
 	}
 	
 	/* Tablet Viewport: Style rule for form element */	
-	form {
+/* 	form {
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -402,7 +403,7 @@ footer a {
 	
 	main h2 { 
 		font-size: 1.6em;
-		color: #00b050;
+		color: #fff;
 	}
 
 	.pic-text {
@@ -416,7 +417,7 @@ footer a {
 
 	.frame:hover {
 		opacity: 1;
-		box-shadow: 8px 8px 10px #808080;
+		box-shadow: 8px 8px 10px #0;
 	}
 	
 	#crocheting, #resin, #candy, #lathe { 
@@ -434,7 +435,7 @@ footer a {
 	}
 
 	/* Desktop Viewport: Style rules for form elements */
-	form {	
+/* 	form {	
 		width: auto;
 	}
 
@@ -473,7 +474,7 @@ third, .event {
   float: left;
   text-align: center;}
 
-.event p {border-right: 1px solid #999; }
+.event p {border-right: 1px solid #000; }
 #content .event:last-child p {border-right: none;}
 
 .third p {
@@ -497,10 +498,10 @@ third, .event {
 #vote {padding-top: 20px;}
 p#selector {margin-top: -40px;}
 
-form {
+/* form {
   margin: 0 0 0 90px;
   width: 300px;
-  }
+  } */
 label, input {
   display: inline-block;
   }
@@ -508,12 +509,12 @@ label {
   display: block;
   text-align: left;
   padding-top: 10px;
-  text-transform: uppercase;
+
   }
 input {
   border: none;
   border-radius: 5px;
-  background-color: #dcdcdc;
+  background-color: #f;
   font-size: 1em;
   line-height: 1em;
   width: 280px;
@@ -544,9 +545,9 @@ input[type=submit]:hover {
 #rates {padding: 50px 100px 50px 100px;}
 #reload {padding: 0 100px 0 100px;}
 #rates, #reload {text-align: left;}
-.Sew {background-image: url('../img/au.png');}
-.Resin {background-image: url('../img/gb.png');}
-.crochet {background-image: url('../img/us.png');}
+.Sew {background-image: url('../images/au.png');}
+.Resin {background-image: url('../images/gb.png');}
+.crochet {background-image: url('../images/us.png');}
 
 #event a {
   font-family: oswald, arial, sans-serif;
@@ -559,7 +560,7 @@ input[type=submit]:hover {
   float: left;
   margin-top: 10px;
   }
-#event a:hover, #sessions a:hover {color: #1fb684;}
+#event a:hover, #sessions a:hover {color: #00b050;}
 
 #sessions a {
   font-family: oswald, arial, sans-serif;
@@ -570,8 +571,8 @@ input[type=submit]:hover {
   }
 
 #sessions ul {
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
   padding: 0 20px 0 20px;
   margin: 0 0 40px 0;}
   
@@ -579,7 +580,8 @@ input[type=submit]:hover {
   list-style-type: none; 
   padding: 20px 0 20px 0; 
   background-color: #fff; 
-  border-top: 1px solid #d6d6d6;
+  border-top: 1px solid #000
+  ;
   text-align: left;
   }
 #sessions li:first-child {
@@ -598,4 +600,150 @@ input[type=submit]:hover {
   padding: 0;
   margin: 0.8em 0 0 0;
   }
-  
+@import url(http://fonts.googleapis.com/css?family=Trocchi);
+
+body {
+  background-color: #000;
+  margin: 0;}
+
+form {
+	font-family: 'Outfit', sans-serif;	
+
+  max-width: 1000px;
+  margin: 0 auto 0 auto;}
+
+.one-third, .two-thirds {
+  background-color: #00b050;
+  border: 12px solid #fff;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  overflow: hidden;}
+
+.one-third {width: 268px;}
+.two-thirds {width: 530px;}
+.one-third fieldset {border: none; margin: 0.5em;}
+.two-thirds fieldset {border: none; margin: 2.5em;}
+
+.container .one-third, .container .two-thirds {height: 35em;}
+.login .one-third, .login .two-thirds { height: 20em;}
+
+#logo {
+  width: 220px;
+  height: 220px;
+  margin: 1em auto 2em auto;
+  display: block;}
+
+h2 {
+  font-weight: normal;
+  margin: 0;}
+
+p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  margin: 1em;}
+
+.welcome {text-align: center;}
+p.intro {margin: 2em;}
+
+
+/* FORM STYLES */
+legend {
+  font-size: 160%;
+  position: relative;
+  color: #fff;}
+.one-third legend { top: -0.2em; left: -0.6em;}
+.two-thirds legend { top: -1em; left: -1em;}
+
+label {width: 100%; display: block;}
+label[for="parentsConsent"], label[for="showPwd"], label[for="search"], label[for="print"], label[for="other"], label[for="parents-consent"] {display: inline;}
+label[for="equipmentType"], label[for="model"] {display: inline-block; width: 4em;}
+
+input {
+  border: none;
+  padding: 8px;
+  line-height: 1.0em; 
+  margin-bottom: 1.4em;
+  font-size: 1.2em;}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="color"], input[type="number"] {width: 90%;}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="password"], input[type="date"], input[type="color"], #bio {
+  box-shadow: inset 0 2px 2px #fff;
+  outline: 0;}
+
+input[type="submit"], #submit {
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  float: r
+ 	font-family: 'Outfit', sans-serif;;;
+  font-size: 1.0em;
+  margin-right: 1.4em;}
+
+input[type="submit"]:hover, #submit:hover {
+  background-color: #666;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px #000;
+  box-shadow: inset 0 2px 2px #000;}
+
+.register input[type="submit"] {margin: 1em 0 0 0;}
+
+#submit.disabled {background-color: #999;}
+#submit.disabled:hover {
+  background-color: #999;
+  text-shadow: none;
+  box-shadow: none;
+  cursor: not-allowed;}
+
+textarea {
+  width: 100%;
+  height: 5em;
+  clear: left;
+  border: none;}
+
+.req {
+  color: #000;
+  font-size: 0.6em;
+  position: relative;
+  top: -0.5em;}
+
+.hide {display: none;}
+.fail { background-image: url("../img/cross.png"); }
+.pass { background-image: url("../img/tick.png"); }
+.fail, .pass {
+  background-repeat: no-repeat; 
+  background-position: right center;}
+
+
+span.error {
+  padding-top: 1px;
+  margin-top: -1.4em;
+  margin-bottom: 1.4em;
+  display: block;
+  padding-left: 20px;
+  color: #242424;
+  background-image: url("../img/icon-warning.png");
+  background-position: left 3px;
+  background-repeat: no-repeat;}
+
+textarea + span.error, #bio-count {margin: 0;}
+
+/* TEXTAREA */
+#bio-count.warn b, #bio-count.error b {
+  border-radius: 16px;
+  padding-top: 4px;
+  width: 32px;
+  height: 28px;
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;}
+.warn b {color: #ffff66; background-color: #333;}
+.error b {color: #ff9966; background-color: #000;}
+
+
+/* needed to override default style sheet of number polyfill */
+div.number-spin-btn-container {
+  margin-bottom: 1.6em !important; }  
