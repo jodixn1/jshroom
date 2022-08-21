@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- 
+Author: Joy Dixon
+Date: 8/15/2022
+File Name: Form Validation -->
+
+<html lang="en">
+<head>
+	<title>Jshroom Art</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/c13.css" />
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"> 
+
+</head>
+<body>
+
+	<div id="container">
+
+		<!-- Use the header area for the website name or logo -->
+		<header> 			
+			<a href="index.html"><img src="images/jshroomlogo.png"  alt="Jshroom Art Logo"></a>
+		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li> 
+				<li><a href="classes.html">Classes</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="validation.html">Membership</a></li>	
+				<li><a href="i-schedule.html">I-schedule</a></li>
+				<li><a href="schedule.html">Schedule</a></li>
+				<li><a href="team.html">Team Events</a></li>
+			</ul>
+		</nav>
+		</div>		
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+
+  <div class="container">
+    <form method="post" action="/register" name="register">
+      <div class="one-third column">
+        <img src="img/maker-logo.JPG" alt="logo" id="logo" />
+        <h2 class="welcome">Become a Member</h2>
+        <p class="intro">Welcome to the Jshroom Art.  We help our clients meet their artistic goals. We offer classes in knitting, crocheting, sewing, photography, resin, candy making, card making, stained glass and lathe work. </p>
+      </div>
+      <div class="one-third column">
+        <h2>Enter your info</h2>
+          <div class="name">
+            <label for="name" class="required">Name:</label>
+            <input type="text" placeholder="Enter your name" name="name" id="name" required title="Please enter your name">
+          </div>
+          <div class="email">
+            <label for="email" class="required">Email:</label>
+            <input type="email" placeholder="you@example.com" name="email" id="email" required>
+          </div>
+          <div class="password">
+            <label for="password" class="required">Password:</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div class="password">
+            <label for="conf-password" class="required">Confirm password:</label>
+            <input type="password" name="conf-password" id="conf-password" required>
+          </div>
+        </fieldset>
+      </div>
+      <div class="one-third column">
+        <h2>Profile</h2>
+          <div class="birthday">
+            <label for="birthday" class="required">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" placeholder="yyyy-mm-dd" required>
+            <div id="consent-container" class="hide">
+              <label for="parents-consent">You need a parent's permission to join.
+                Click here to approve your child's membership:</label>
+              <input type="checkbox" name="parents-consent" id="parents-consent">
+            </div>
+          </div>
+          <div class="bio">
+            <label for="bio">Short Bio (max 140 characters):</label>
+            <textarea name="bio" id="bio" rows="5" cols="30"></textarea>
+            <span id="bio-count" class="hide">140</span>
+          </div>
+		  <br></br>
+          <div class="submit"><input type="submit" value="Submit"></div>
+		  
+      </div>
+    </form>
+  </div><!-- .container -->
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.js"></script>
+  <script src="js/utilities.js"></script>
+  <script src="js/placeholder-polyfill.js"></script>
+  <script src="js/password-signup.js"></script>
+  <script src="js/birthday.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/bio.js"></script>			
+			
+		</main>
+		<!-- Use the footer area to add webpage footer content -->
+		<footer>
+			<p>&copy;Copyright 2022.  All Rights Reserved</p>
+			<p><a href="mailto:jodixn@outlook.com">Contact us</a></p>
+		</footer>
+		
+
+
+	</body>
+</html>
