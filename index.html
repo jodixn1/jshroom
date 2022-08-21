@@ -1,63 +1,157 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>JavaScript &amp; jQuery - Chapter 13: Form Enhancement and Validation Enhancement &amp; Validation</title>
-    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+<!DOCTYPE>
+<!-- 
+Author: Joy Dixon
+Mondified Date: 7/16/2022
+File Name: index.html -->
+
+<html lang="en">
+<head>
+	<title>JShroom Art</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"> 
+
+</head>
+<body>
+
+	<div id="container">
+	
+
+
+		<!-- Use the header area for the website name or logo
+		<header> 
+			<a href="index.html"><img src="images/jshroomlogo.png" alt="Jshroom Art logo"></a>
+		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li> 
+				<li><a href="classes.html">Classes</a></li>
+				<li><a href="validation.html">Membership</a></li>	
+				<li><a href="photos.html">Photos</a></li>
+				<li><a href="schedule.html">Schedule</a></li>
+				<li><a href="team.html">Team Events</a></li>
+			</ul>
+		</nav>
+		
+		
+			
+		<h1>Jshroom Art Studio</h1>
+				
+		<!-- Add a javascript called add-conent.js -->
+		
+		
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+			<div class="mobile">
+			
+				<p>Welcome to Jshroom Art. We offer classes in knitting, crocheting, sewing, photography, resin, candy making, card making. We offer team building events based on any of the classes.  Equipment, supplies and instructions are provided in the price per class.</p> 
+				
+				<p>Call Us Today to Get Started</p>
+				<p class="tel-link"><a href="tel:425.422.1111">(425) 422-1111</a></p>
+
+				<h4>Jshroom Hours</h4>
+				<ul class="hours"> 
+					<li>Mon-Thu: 9:00am-5:00pm</li> 
+					<li>Friday: 9:00am-3:00pm</li>
+					<li>Saturday: by apointment only</li>
+					<li>Sunday: Closed</li>
+				</ul>
+			</div>
+		
+			<div id="intro" class="tablet-desktop">
+			<script src="js/add-content.js"></script>
+				<p>Our mission is to help our clients meet their artistic goals. We offer classes in knitting, crocheting, sewing, photography, resin, candy making, card making, lathe work. We offer team building events based on any of the classes.  Equipment, supplies and instructions are provided in the price per class.</p> 
+				
+   <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Example</title>
+    <link rel="stylesheet" href="css/c03.css" />
+  
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Example</title>
+    <link rel="stylesheet" href="css/c03.css" />
   </head>
-  <body>
-    <h1 id="header"><a href="../index.html">JavaScript &amp; jQuery</a></h1>
-    <h2>Chapter 13: Form Enhancement &amp; Validation</h2>
-    <table>
-      <tr>
-        <td><strong>Reacting to the submit event</strong></td>
-        <td><a href="submit-event.html">submit-event.html</a></td>
-        <td><a href="js/submit-event.js">submit-event.js</a></td>
-      </tr>
-      <tr>
-        <td><strong>Changing the type of a form input</strong></td>
-        <td><a href="input-type.html">input-type.html</a></td>
-        <td><a href="js/input-type.js">input-type.js</a></td>
-      </tr>
-      <tr>
-        <td><strong>Disable the submit button</strong></td>
-        <td><a href="disable-submit.html">disable-submit.html</a></td>
-        <td><a href="js/disable-submit.js">disable-submit.js</a></td>
-      </tr>
-      <tr>
-        <td><strong>Select all checkboxes</strong></td>
-        <td><a href="all-checkboxes.html">all-checkboxes.html</a></td>
-        <td><a href="js/all-checkboxes.js">all-checkboxes.js</a></td>
-      </tr>
-      <tr>
-        <td><strong>When a radio is selected show an extra option</strong></td>
-        <td><a href="show-option.html">show-option.html</a></td>
-        <td><a href="js/show-option.js">show-option.js</a></td>
-      </tr>
-      <tr>
-        <td><strong>Populate a selectbox</strong></td>
-        <td><a href="populate-selectbox.html">populate-selectbox.html</a></td>
-        <td><a href="js/populate-selectbox.js">populate-selectbox.js</a></td>
-      </tr>
-      <tr>
-        <td><strong>Character counter for textarea</strong></td>
-        <td><a href="textarea-counter.html">textarea-counter.html</a></td>
-        <td><a href="js/textarea-counter.js">textarea-counter.js</a></td>
-      </tr>
-      <tr>
-        <td><strong>Placeholder text</strong></td>
-        <td><a href="placeholder-polyfill.html">placeholder-polyfill.html</a></td>
-        <td><a href="js/placeholder-polyfill.js">placeholder-polyfill.js</a></td>
-      </tr>
-      <tr>
-        <td><strong>Number polyfill</strong></td>
-        <td><a href="number-polyfill.html">number-polyfill.html</a></td>
-        <td><a href="js/number-polyfill-eg.js">number-polyfill-eg.js</a></td>
-      </tr>
-      <tr>
-        <td><strong>Example</strong></td>
-        <td><a href="validation.html">validation.html</a></td>
-        <td><a href="js/validation.js">validation.js</a></td>
-      </tr>
-    </table>
-  </body>
+  <html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Example</title>
+    <link rel="stylesheet" href="css/c03.css" />
+  
+    <h1></h1>
+    <div id="info">
+      <h2>15% off any class booked by the offer expiration date.</h2>
+      <div id="hotelName"></div>
+	  <div id="roomRate"></div>
+	  <div id="specialRate"></div>
+      <div id="offerEnds"></div>
+    </div>
+    <script src="js/discount.js"></script>
+ 
 </html>
+				<p>Contact us today to set up your class. (425) 422-1111</p>
+			
+			</div>
+			
+			<div class="grid">
+				
+				<figure class="frame">
+					<a href="classes.html"><img src="images/knitting.jpg" alt="knitting needle"></a>
+					<figcaption class="pic-text">Knitting</figcaption>
+				</figure> 
+				
+				<figure class="frame">
+					<a href="classes.html"><img src="images/crocheting.jpg" alt="crochet hook"></a>
+					<figcaption class="pic-text">Crocheting</figcaption>
+				</figure>
+							
+				<figure class="frame">
+					<a href= "classes.html"><img src="images/sewing.jpg" alt="person sewing"></a>
+					<figcaption class="pic-text">Sewing</figcaption>
+				</figure>	
+				
+				<figure class="frame">
+					<a href= "classes.html"><img src="images/resin.jpg" alt="resin art"></a>
+					<figcaption class="pic-text">Resin</figcaption>
+				</figure>
+
+			</div>
+			
+			<div class="grid2">			
+
+				<figure class="frame">
+					<a href= "classes.html"><img src="images/photography.jpg" alt="Person taking a picture"></a>
+					<figcaption class="pic-text">Photography</figcaption>
+				</figure>	
+
+				<figure class="frame">
+					<a href= "classes.html"><img src="images/candy.jpg" alt="Making candy"></a>
+					<figcaption class="pic-text">Candy Making</figcaption>
+				</figure>	
+
+				<figure class="frame">
+					<a href= "classes.html"><img src="images/cards.jpg" alt="Card Design"></a>
+					<figcaption class="pic-text">Card Design</figcaption>
+				</figure>					
+
+				<figure class="frame">
+					<a href= "classes.html"><img src="images/lathe.jpg" alt="Creation of a candle stick"></a>
+					<figcaption class="pic-text">Lathe Creations</figcaption>
+				</figure>	
+				
+			</div> 
+						
+		</main>
+		
+
+	
+		<!-- Use the footer area to add webpage footer content -->
+		<footer>
+			<script SCR="js/add-content.js"></script>
+			<p>&copy;Copyright 2022.  All Rights Reserved</p>
+			<p><a href="mailto:jodixn@comcast.net">Contact us</a></p>
+		</footer>
+		
+	</div>
+
+</body>
